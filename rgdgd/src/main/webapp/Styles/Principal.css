@@ -1,0 +1,194 @@
+@charset "UTF-8";
+
+/* Reset básico */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+	width: 100%;
+	background-color: #ffffff;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 2rem;
+}
+
+.navbar-logo img {
+	max-height: 50px;
+	width: auto;
+}
+
+.navbar-content {
+	display: flex;
+	align-items: center;
+}
+
+/* Menú de navegación */
+.navbar-menu {
+	list-style: none;
+	display: flex;
+	gap: 20px;
+}
+
+.navbar-menu li {
+	position: relative;
+}
+
+.navbar-menu a {
+	text-decoration: none;
+	color: black;
+	padding: 10px;
+	display: block;
+	transition: color 0.3s ease;
+}
+
+.navbar-menu a:hover {
+	color: #007BFF;
+}
+
+/* Menú desplegable */
+.dropdown-menu {
+	display: none;
+	position: absolute;
+	background-color: #ffffff;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	list-style: none;
+	padding: 0;
+	width: 180px;
+	border-radius: 5px;
+}
+
+.dropdown-menu li {
+	margin: 0;
+}
+
+.dropdown-menu a {
+	padding: 10px;
+	width: 100%;
+	display: block;
+	color: black;
+}
+
+.dropdown-menu a:hover {
+	background-color: #f0f0f0;
+}
+
+.dropdown:hover .dropdown-menu {
+	display: block;
+}
+
+/* Sección Resumen Financiero */
+.resumen-financiero {
+	width: 80%;
+	margin: 50px auto;
+	padding: 20px;
+	background-color: #f9f9f9;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	text-align: center;
+}
+
+.contador-dinero span {
+	font-weight: bold;
+	color: #007BFF;
+	font-size: 18px;
+}
+
+/* Perfil de Usuario */
+.perfil-usuario {
+	width: 250px;
+	background-color: #f9f9f9;
+	padding: 20px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	position: absolute;
+	left: 20px;
+	top: 80px;
+	bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.perfil-header {
+	text-align: center;
+}
+
+.perfil-header img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin-bottom: 10px;
+}
+
+.perfil-contacto {
+	margin-top: 15px;
+	text-align: left;
+	padding: 10px;
+}
+
+.perfil-contacto a {
+	text-decoration: none;
+	color: #007BFF;
+}
+
+.social-icons {
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+}
+
+.social-icons a {
+	display: flex;
+	align-items: center;
+	color: black;
+	text-decoration: none;
+	margin-bottom: 10px;
+}
+
+.social-icons i {
+	margin-right: 8px;
+	font-size: 20px;
+	color: #007BFF;
+}
+
+.perfil-config {
+	text-align: center;
+	padding: 10px;
+}
+
+.perfil-config button {
+	background-color: #007BFF;
+	color: white;
+	border: none;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background 0.3s ease;
+	width: 100%;
+}
+
+.perfil-config button:hover {
+	background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: #FFFFFF;
+	color: Black;
+	text-align: center;
+	padding: 1rem;
+	box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}

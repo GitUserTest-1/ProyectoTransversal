@@ -6,31 +6,65 @@
 	box-sizing: border-box;
 }
 
-body {
-	font-family: Arial, sans-serif;
-	background-image:
-		url('https://www.freevector.com/uploads/vector/preview/90951/vecteezySubtleBackgroundFV0223_generated.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center;
+.navbar {
+	width: 100%;
+	background-color: #ffffff;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 100vh;
-	margin: 0;
+	padding: 1rem 0;
+}
+
+.texto-bienvenida {
+    text-align: center; /* Centra el texto horizontalmente */
+    font-size: 2.5rem; /* Tamaño del texto */
+    color: #333; /* Color del texto */
+    margin: 100px auto; /* Margen superior e inferior, auto para centrar horizontalmente */
+    font-family: Arial, sans-serif; /* Misma fuente que el resto */
+    width: 100%; /* Asegura que ocupe todo el ancho para centrar correctamente */
+    position: relative; /* Asegura que no se vea afectado por otros elementos flex */
+}
+
+.navbar-logo {
+	display: flex;
+	justify-content: center;
+}
+
+.navbar-logo img {
+	max-height: 50px; /* Ajusta la altura del logo según sea necesario */
+	width: auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://www.freevector.com/uploads/vector/preview/90951/vecteezySubtleBackgroundFV0223_generated.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Cambiamos a columna para apilar los elementos */
+    align-items: center; /* Centra horizontalmente los hijos */
 }
 
 .container {
+	margin-top: 2px;
 	display: flex;
-	height: 100vh;
+	height: 40vh;
 	align-items: center;
 	justify-content: center;
 }
 
 .form-container {
 	display: flex;
-	width: 50%;
+	width: 100%;
 	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 	border-radius: 10px;
 	overflow: hidden;
@@ -38,6 +72,14 @@ body {
 	padding: 2rem;
 	flex-direction: column;
 	align-items: center;
+}
+
+.form-container h1{
+	margin-bottom: 2rem;
+}
+
+.longin-title{
+	margin-bottom: 2rem;
 }
 
 .title {
